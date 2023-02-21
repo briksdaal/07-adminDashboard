@@ -11,20 +11,22 @@
     <!-- Start by writing out the HTML elements for the sidebar, header and main-content containers. -->
     <div class="dashboard-container">
       <div class="sidebar">
-        <h1>Dashboard</h1>
-        <ul>
-          <li><i>I </i>Dummy content 1</li>
-          <li><i>I </i>Dummy content 2</li>
-          <li><i>I </i>Dummy content 3</li>
-          <li><i>I </i>Dummy content 4</li>
-          <li><i>I </i>Dummy content 5</li>
-          <li><i>I </i>Dummy content 6</li>
-        </ul>
-        <ul>
-          <li><i>I </i>Dummer content 1</li>
-          <li><i>I </i>Dummer content 2</li>
-          <li><i>I </i>Dummer content 3</li>
-        </ul>
+        <div class="sidebar-container">
+            <h1>Dashboard</h1>
+            <ul>
+              <li><i>I </i>Dummy content 1</li>
+              <li><i>I </i>Dummy content 2</li>
+              <li><i>I </i>Dummy content 3</li>
+              <li><i>I </i>Dummy content 4</li>
+              <li><i>I </i>Dummy content 5</li>
+              <li><i>I </i>Dummy content 6</li>
+            </ul>
+            <ul>
+              <li><i>I </i>Dummer content 1</li>
+              <li><i>I </i>Dummer content 2</li>
+              <li><i>I </i>Dummer content 3</li>
+            </ul>
+        </div>
       </div>
       <div class="header">
         <div class="top-header">
@@ -34,15 +36,17 @@
                 <input type="search" name="searchbar" id="searchbar" placeholder="searchy search">
             </form>
           </div>
-          <div class="alarm-icon">RRR</div>
-          <div class="avatar">00</div>
-          <div class="user-name">Morgan Oakley</div>
+          <div class="user-bar">
+              <div class="alarm-icon">RRR</div>
+              <div class="avatar">00</div>
+              <div class="user-name">Morgan Oakley</div>
+          </div>
         </div>
         <div class="bot-header">
             <div class="user-hi">
                 <div class="avatar">00</div>
-                <span>Hi there</span>
-                <div class="current-user">Morgan Oakley (@morgan)</div>
+                <span>Hi there,</span>
+                <h2 class="current-user">Morgan Oakley (@morgan)</h2>
             </div>
             <ul>
                 <li><button>Butt 1</button></li>
@@ -54,85 +58,91 @@
       <div class="main-content">
         <section class="your-projects">
             <h2>Your Projects</h2>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 1</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 2</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 3</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 4</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 5</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3></h3>
-              <p>Dummy dummy 6</p>
-              <div class="corner-icons">
-                <span>1</span><span>2</span><span>3</span>
-              </div>
+            <div class="cards-container">
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 1</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 2</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 3</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 4</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 5</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3></h3>
+                  <p>Dummy dummy 6</p>
+                  <div class="corner-icons">
+                    <span>1</span><span>2</span><span>3</span>
+                  </div>
+                </div>
             </div>
         </section>
         <section class="announcements">
             <h2>Announcements</h2>
-            <div class="announce-card">
-                <h4>Announcement 1</h4>
-                <p>dummy dummy dummy dummy dummy dummy</p>
-            </div>
-            <div class="announce-card">
-                <h4>Announcement 2</h4>
-                <p>dummy dummy dummy dummy dummy dummy</p>
-            </div>
-            <div class="announce-card">
-                <h4>Announcement 3</h4>
-                <p>dummy dummy dummy dummy dummy dummy</p>
+            <div class="inner-announce-container">
+                <div class="announce-card">
+                    <h4>Announcement 1</h4>
+                    <p>dummy dummy dummy dummy dummy dummy</p>
+                </div>
+                <div class="announce-card">
+                    <h4>Announcement 2</h4>
+                    <p>dummy dummy dummy dummy dummy dummy</p>
+                </div>
+                <div class="announce-card">
+                    <h4>Announcement 3</h4>
+                    <p>dummy dummy dummy dummy dummy dummy</p>
+                </div>
             </div>
         </section>
         <section class="trending">
             <h2>Trending</h2>
-            <div class="trending-item">
-                <div class="avatar">00</div>
-                <h4>handle 1</h4>
-                <div class="item-info">dummy dummy 1</div>
-            </div>
-            <div class="trending-item">
-                <div class="avatar">00</div>
-                <h4>handle 2</h4>
-                <div class="item-info">dummy dummy 2</div>
-            </div>
-            <div class="trending-item">
-                <div class="avatar">00</div>
-                <h4>handle 3</h4>
-                <div class="item-info">dummy dummy 3</div>
-            </div>
-            <div class="trending-item">
-                <div class="avatar">00</div>
-                <h4>handle 4</h4>
-                <div class="item-info">dummy dummy 4</div>
+            <div class="inner-trending-container">
+                <div class="trending-item">
+                    <div class="avatar">00</div>
+                    <h4>handle 1</h4>
+                    <div class="item-info">dummy dummy 1</div>
+                </div>
+                <div class="trending-item">
+                    <div class="avatar">00</div>
+                    <h4>handle 2</h4>
+                    <div class="item-info">dummy dummy 2</div>
+                </div>
+                <div class="trending-item">
+                    <div class="avatar">00</div>
+                    <h4>handle 3</h4>
+                    <div class="item-info">dummy dummy 3</div>
+                </div>
+                <div class="trending-item">
+                    <div class="avatar">00</div>
+                    <h4>handle 4</h4>
+                    <div class="item-info">dummy dummy 4</div>
+                </div>
             </div>
         </section>
       </div>
