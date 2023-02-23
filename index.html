@@ -9,156 +9,215 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <!-- Start by writing out the HTML elements for the sidebar, header and main-content containers. -->
     <div class="dashboard-container">
       <div class="sidebar">
         <div class="sidebar-container">
-            <h1>Dashboard</h1>
-            <ul>
-              <li><i>I </i>Dummy content 1</li>
-              <li><i>I </i>Dummy content 2</li>
-              <li><i>I </i>Dummy content 3</li>
-              <li><i>I </i>Dummy content 4</li>
-              <li><i>I </i>Dummy content 5</li>
-              <li><i>I </i>Dummy content 6</li>
-            </ul>
-            <ul>
-              <li><i>I </i>Dummer content 1</li>
-              <li><i>I </i>Dummer content 2</li>
-              <li><i>I </i>Dummer content 3</li>
-            </ul>
+          <div class="sidebar-title">
+              <span class="iconify" data-icon="mdi-view-dashboard"></span>
+              <h1>Dashboard</h1>
+          </div>
+          <ul>
+            <li>
+                <span class="iconify" data-icon="mdi-home"></span>
+                <span class="sidebar-list-text">Home</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-card-account-details-outline"></span>
+              <span class="sidebar-list-text">Profile</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-message-reply"></span>
+              <span class="sidebar-list-text">Messages</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-clock-time-three"></span>
+              <span class="sidebar-list-text">History</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-note-multiple"></span>
+              <span class="sidebar-list-text">Tasks</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-account-group"></span>
+              <span class="sidebar-list-text">Communities</span>
+            </li>
+          </ul>
+          <ul>
+            <li><span class="iconify" data-icon="mdi-cog"></span>
+                <span class="sidebar-list-text">Settings</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-help-box"></span>
+              <span class="sidebar-list-text">Support</span>
+            </li>
+            <li>
+              <span class="iconify" data-icon="mdi-shield-check"></span>
+              <span class="sidebar-list-text">Privacy</span>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="header">
         <div class="top-header">
           <div class="search-bar">
             <form action="">
-                <label for="searchbar">0\</label>
-                <input type="search" name="searchbar" id="searchbar" placeholder="searchy search">
+              <label for="searchbar"
+                ><span class="iconify" data-icon="mdi-magnify"></span
+              ></label>
+              <input
+                type="search"
+                name="searchbar"
+                id="searchbar"
+              />
             </form>
           </div>
           <div class="user-bar">
-              <div class="alarm-icon">
-                <span class="iconify" data-icon="mdi-bell-ring-outline"></span>
+            <div class="alarm-icon">
+              <span class="iconify" data-icon="mdi-bell-ring-outline"></span>
             </div>
-              <div class="avatar">00</div>
-              <div class="user-name">Morgan Oakley</div>
+            <div class="avatar">
+              <span class="iconify" data-icon="mdi-french-fries"></span>
+            </div>
+            <div class="user-name">Patito Patito</div>
           </div>
         </div>
         <div class="bot-header">
-            <div class="user-hi">
-                <div class="avatar">00</div>
-                <span>Hi there,</span>
-                <h2 class="current-user">Morgan Oakley (@morgan)</h2>
+          <div class="user-hi">
+            <div class="avatar">
+              <span class="iconify" data-icon="mdi-french-fries"></span>
             </div>
-            <ul>
-                <li><button>Butt 1</button></li>
-                <li><button>Butt 2</button></li>
-                <li><button>Butt 3</button></li>
-            </ul>
+            <span>Hi there,</span>
+            <h2 class="current-user">Patito Patito (@patito)</h2>
+          </div>
+          <ul>
+            <li><button>New</button></li>
+            <li><button>Upload</button></li>
+            <li><button>Share</button></li>
+          </ul>
         </div>
       </div>
       <div class="main-content">
         <section class="your-projects">
-            <h2>Your Projects</h2>
-            <div class="cards-container">
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 1</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 2</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 3</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 4</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 5</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text">
-                      <h3>Card title #</h3>
-                      <p>Dummy dummy 6</p>
-                  </div>
-                  <div class="corner-icons">
-                    <span>1</span><span>2</span><span>3</span>
-                  </div>
-                </div>
+          <h2>Your Projects</h2>
+          <div class="cards-container">
+            <div class="card">
+              <div class="card-text">
+                <h3>King of the Slide</h3>
+                <p>Quisque eu blandit risus, ut lobortis felis. Quisque vitae odio sollicitudin, maximus diam posuere, pharetra.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
             </div>
+            <div class="card">
+              <div class="card-text">
+                <h3>Pizza in the Kitchen</h3>
+                <p>Ut a ante turpis. Proin auctor eleifend ultricies. Aliquam id imperdiet odio. Etiam sed semper.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-text">
+                <h3>Rice Krispies</h3>
+                <p>In feugiat ut justo id lacinia. Proin mollis eros ac consequat hendrerit. Vestibulum ante ipsum.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-text">
+                <h3>Grandma Darkness</h3>
+                <p>Maecenas ac diam efficitur, placerat enim vel, suscipit odio. Sed lobortis malesuada hendrerit. Phasellus tincidunt.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-text">
+                <h3>Killer in the Truck</h3>
+                <p>Nulla a commodo massa. Aliquam rhoncus ullamcorper sapien eget pretium. Etiam posuere leo justo, id.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-text">
+                <h3>The Brown Bubble</h3>
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sapien lorem, venenatis id.</p>
+              </div>
+              <div class="corner-icons">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-fork"></span>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="announcements">
-            <h2>Announcements</h2>
-            <div class="inner-announce-container">
-                <div class="announce-card">
-                    <h4>Announcement 1</h4>
-                    <p>dummy dummy dummy dummy dummy dummy</p>
-                </div>
-                <div class="announce-card">
-                    <h4>Announcement 2</h4>
-                    <p>dummy dummy dummy dummy dummy dummy</p>
-                </div>
-                <div class="announce-card">
-                    <h4>Announcement 3</h4>
-                    <p>dummy dummy dummy dummy dummy dummy</p>
-                </div>
+          <h2>Announcements</h2>
+          <div class="inner-announce-container">
+            <div class="announce-card">
+              <h4>Site Maintenance</h4>
+              <p>Morbi vulputate erat felis, ut ullamcorper arcu feugiat eu. Praesent vulputate ligula felis.</p>
             </div>
+            <div class="announce-card">
+              <h4>Community Share Day</h4>
+              <p>
+                Ut non rhoncus mauris, non dapibus leo. Praesent interdum placerat purus, a placerat.</p>
+            </div>
+            <div class="announce-card">
+              <h4>Updated Privacy Policy</h4>
+              <p>Aliquam ligula neque, mattis eu aliquet sagittis, interdum id purus. Suspendisse tellus sapien.</p>
+            </div>
+          </div>
         </section>
         <section class="trending">
-            <h2>Trending</h2>
-            <div class="inner-trending-container">
-                <div class="trending-item">
-                    <div class="avatar">00</div>
-                    <h4>handle 1</h4>
-                    <div class="item-info">dummy dummy 1</div>
-                </div>
-                <div class="trending-item">
-                    <div class="avatar">00</div>
-                    <h4>handle 2</h4>
-                    <div class="item-info">dummy dummy 2</div>
-                </div>
-                <div class="trending-item">
-                    <div class="avatar">00</div>
-                    <h4>handle 3</h4>
-                    <div class="item-info">dummy dummy 3</div>
-                </div>
-                <div class="trending-item">
-                    <div class="avatar">00</div>
-                    <h4>handle 4</h4>
-                    <div class="item-info">dummy dummy 4</div>
-                </div>
+          <h2>Trending</h2>
+          <div class="inner-trending-container">
+            <div class="trending-item">
+              <div class="avatar">
+                <span class="iconify" data-icon="mdi-koala"></span>
+              </div>
+              <h4>@briksdaal</h4>
+              <div class="item-info">Extreme Patatos</div>
             </div>
+            <div class="trending-item">
+              <div class="avatar">
+                <span class="iconify" data-icon="mdi-bomb"></span>
+              </div>
+              <h4>@kapoofos</h4>
+              <div class="item-info">Patito The Great</div>
+            </div>
+            <div class="trending-item">
+              <div class="avatar">
+                <span class="iconify" data-icon="mdi-french-fries"></span>
+              </div>
+              <h4>@patito</h4>
+              <div class="item-info">Skull Of Plenty</div>
+            </div>
+            <div class="trending-item">
+              <div class="avatar">
+                <span class="iconify" data-icon="mdi-sheep"></span>
+              </div>
+              <h4>@dedecomputer</h4>
+              <div class="item-info">Computerosos</div>
+            </div>
+          </div>
         </section>
       </div>
     </div>

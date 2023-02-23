@@ -7,13 +7,14 @@
   --off-color: #e2e8f0;
   --plain-color: #ffffff;
   --shade-color: #b0b8c3;
+  --grey-color: #636363;
   --black-color: #000000;
 }
 
 :root {
   font-size: 18px;
   --main-color: #4f46e5;
-  --comp-color: #9F46E5;
+  --comp-color: #9f46e5;
   --off-color: #e0e7ff;
   --plain-color: #ffffff;
   --shade-color: #b0b8c3;
@@ -25,8 +26,23 @@
   margin: 0;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .dashboard-container {
   display: grid;
+  height: 100vh;
   grid-template-columns: auto 1fr;
 }
 
@@ -46,6 +62,21 @@
   gap: 60px;
 }
 
+.sidebar-title,
+.sidebar li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  column-gap: 1rem;
+  align-items: center;
+}
+.sidebar-title svg {
+  font-size: 2rem;
+}
+
+.sidebar svg {
+  justify-self: center;
+}
+
 .sidebar-container h1,
 .sidebar-container ul {
   padding: 0;
@@ -56,6 +87,8 @@
   list-style: none;
   display: grid;
   gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /*** end sidebar styles ***/
@@ -65,10 +98,10 @@
 
 .header {
   background-color: var(--plain-color);
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 
-.header > div {
+.top-header, .bot-header {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1rem;
@@ -83,10 +116,35 @@
   gap: 1rem;
 }
 
+.user-bar .user-name {
+  font-weight: 700;
+}
+
+.header form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header input {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--off-color);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
 .user-hi {
   display: grid;
   grid-template-columns: 5rem 1fr;
   grid-template-rows: repeat(2, 2.5rem);
+}
+
+.user-hi span{
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 .user-hi .avatar {
@@ -108,13 +166,13 @@
 /*** main-content styles ***/
 
 .main-content {
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   background-color: var(--off-color);
   display: grid;
   grid-template-columns: 8fr 3fr;
   grid-template-rows: 1fr 1fr;
   column-gap: 2rem;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .your-projects {
@@ -133,21 +191,32 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
   gap: 1.5rem;
 }
 
 .your-projects .card {
   border-left: 10px solid var(--comp-color);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card-text {
+  display: grid;
+  row-gap: 0.3rem;
   align-self: start;
+}
+
+.card-text p {
+  font-size: 0.8rem;
+  color: var(--grey-color);
 }
 
 .corner-icons {
   justify-self: end;
   align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.3rem;
 }
 
 .inner-announce-container {
@@ -156,6 +225,15 @@
 
 .inner-trending-container {
   padding: 1.5rem;
+}
+
+.announce-card h4 {
+  font-size: 0.8rem;
+}
+
+.announce-card p {
+  font-size: 0.7rem;
+  color: var(--grey-color);
 }
 
 .your-projects .card,
@@ -171,7 +249,7 @@
 .trending-item {
   display: grid;
   grid-template-columns: 5rem 1fr;
-  grid-template-rows: repeat(2, 2.5rem);
+  /* grid-template-rows: repeat(2, 2.5rem); */
 }
 
 .trending-item .avatar {
@@ -180,10 +258,14 @@
 }
 
 .trending-item h4 {
+  font-weight: 400;
   align-self: end;
+  font-size: 0.8rem;
 }
 
 .trending-item .item-info {
+  font-size: 0.8rem;
+  color: var(--grey-color);
   align-self: start;
 }
 
@@ -191,5 +273,61 @@
 /* !!! */
 
 .alarm-icon svg {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.user-hi svg {
+  font-size: 4rem;
+}
+
+.user-bar .avatar svg {
+  font-size: 2rem;
+}
+
+.trending-item svg {
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+.user-hi svg,
+.user-bar .avatar svg {
+  background: #facc15;
+  border-radius: 50%;
+}
+
+.user-hi path,
+.user-bar .avatar path {
+  fill: #cb3535;
+}
+
+.trending-item:nth-of-type(1) svg {
+  background: #e0f2fe;
+}
+
+.trending-item:nth-of-type(1) path {
+  fill: #eaa5ad;
+}
+
+.trending-item:nth-of-type(2) svg {
+  background: #a3a3a3;
+}
+
+.trending-item:nth-of-type(2) path {
+  fill: #fb8500;
+}
+
+.trending-item:nth-of-type(3) svg {
+  background: #facc15;
+}
+
+.trending-item:nth-of-type(3) path {
+  fill: #cb3535;
+}
+
+.trending-item:nth-of-type(4) svg {
+  background: #fda4af;
+}
+
+.trending-item:nth-of-type(4) path {
+  fill: #359980;
 }
